@@ -1,19 +1,19 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using WebAppMVCArquitecture.Data;
+using WebApp.DataAcces.Repository.IRepository;
 using WebAppMVCArquitecture.Models;
 
 namespace WebAppMVCArquitecture.Controllers
 {
     public class CategoryController : Controller
     {
-        private readonly ApplicationDbContext _dbContext;
-        public CategoryController(ApplicationDbContext dbContext)
+        private readonly ICategoryRepository _categoryRepository;
+        public CategoryController(ICategoryRepository categoryRepository)
         {
-            _dbContext = dbContext;
+            _categoryRepository = categoryRepository;
         }
-        public IActionResult Index()
+        public  IActionResult Index()
         {
-            List<Category> listCategories = _dbContext.Categories.ToList();
+            List<Category> listCategories =_categoryRepository.GetAll().Result.ToList();
             return View(listCategories);
         }
 
@@ -31,8 +31,8 @@ namespace WebAppMVCArquitecture.Controllers
             }
             if (ModelState.IsValid)
             {
-                _dbContext.Categories.Add(category);
-                _dbContext.SaveChanges();
+                _categoryRepository.Add(category);
+                _categoryRepository.Save();
                 TempData["Success"] = "Create Succesfully";
                 return RedirectToAction("Index", "Category");
             }
@@ -43,7 +43,7 @@ namespace WebAppMVCArquitecture.Controllers
         {
             if (id == null || id == 0) return NotFound();
 
-            Category? categoryDb = _dbContext.Categories.FirstOrDefault(c=> c.Id == id);
+            Category? categoryDb = _categoryRepository.Get(c=> c.Id == id).Result;
             if (categoryDb == null) return NotFound();
 
             return View(categoryDb);
@@ -54,8 +54,8 @@ namespace WebAppMVCArquitecture.Controllers
         {
             if (ModelState.IsValid)
             {
-                _dbContext.Categories.Update(category);
-                _dbContext.SaveChanges();
+                _categoryRepository.Update(category);
+                _categoryRepository.Save();
                 TempData["Success"] = "Updated Succesfully";
                 return RedirectToAction("Index", "Category");
             }
@@ -66,7 +66,7 @@ namespace WebAppMVCArquitecture.Controllers
         {
             if (id == null || id == 0) return NotFound();
 
-            Category? categoryDb = _dbContext.Categories.FirstOrDefault(c => c.Id == id);
+            Category? categoryDb = _categoryRepository.Get(c => c.Id == id).Result;
             if (categoryDb == null) return NotFound();
 
             return View(categoryDb);
@@ -75,8 +75,8 @@ namespace WebAppMVCArquitecture.Controllers
         [HttpPost]
         public IActionResult Delete(Category category) // for save changes in DB
         {
-            _dbContext.Categories.Remove(category);
-            _dbContext.SaveChanges();
+            _categoryRepository.Remove(category);
+            _categoryRepository.Save();
             TempData["Success"] = "Deleted Succesfully";
             return RedirectToAction("Index", "Category");
         }

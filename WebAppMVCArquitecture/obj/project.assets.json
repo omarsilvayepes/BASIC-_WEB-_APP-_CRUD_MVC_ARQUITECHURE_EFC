@@ -1477,6 +1477,31 @@
             "rid": "win"
           }
         }
+      },
+      "WebApp.DataAcces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0",
+          "WebApp.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/WebApp.DataAcces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebApp.DataAcces.dll": {}
+        }
+      },
+      "WebApp.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/WebApp.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebApp.Models.dll": {}
+        }
       }
     }
   },
@@ -4006,13 +4031,25 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "WebApp.DataAcces/1.0.0": {
+      "type": "project",
+      "path": "../WebApp.DataAcces/WebApp.DataAcces.csproj",
+      "msbuildProject": "../WebApp.DataAcces/WebApp.DataAcces.csproj"
+    },
+    "WebApp.Models/1.0.0": {
+      "type": "project",
+      "path": "../WebApp.Models/WebApp.Models.csproj",
+      "msbuildProject": "../WebApp.Models/WebApp.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.EntityFrameworkCore >= 8.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.0",
-      "Microsoft.EntityFrameworkCore.Tools >= 8.0.0"
+      "Microsoft.EntityFrameworkCore.Tools >= 8.0.0",
+      "WebApp.DataAcces >= 1.0.0",
+      "WebApp.Models >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4041,7 +4078,14 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\WebAppMVCArquitecture\\WebApp.DataAcces\\WebApp.DataAcces.csproj": {
+              "projectPath": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\WebAppMVCArquitecture\\WebApp.DataAcces\\WebApp.DataAcces.csproj"
+            },
+            "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\WebAppMVCArquitecture\\WebApp.Models\\WebApp.Models.csproj": {
+              "projectPath": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\WebAppMVCArquitecture\\WebApp.Models\\WebApp.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
