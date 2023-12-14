@@ -12,10 +12,6 @@ namespace WebApp.DataAcces.Repository
         {
             _dbContext = dbContext;
         }
-        public   void Save()
-        {
-            _dbContext.SaveChanges();
-        }
 
         public Task Update(Category category)
         {
