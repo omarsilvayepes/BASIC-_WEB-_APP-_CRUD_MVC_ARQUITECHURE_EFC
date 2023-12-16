@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebAppMVCArquitecture.Data;
 
@@ -10,9 +11,11 @@ using WebAppMVCArquitecture.Data;
 namespace WebApp.DataAcces.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231215205649_AddTablesAndSeTSeedData")]
+    partial class AddTablesAndSeTSeedData
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -41,10 +44,6 @@ namespace WebApp.DataAcces.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ISBN")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ImageUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -78,7 +77,6 @@ namespace WebApp.DataAcces.Migrations
                             CategoryId = 1,
                             Description = "Description",
                             ISBN = "SW13465789",
-                            ImageUrl = "",
                             ListPrice = 99.0,
                             Price = 98.0,
                             Price100 = 80.0,
@@ -92,7 +90,6 @@ namespace WebApp.DataAcces.Migrations
                             CategoryId = 2,
                             Description = "Description",
                             ISBN = "SW13465789",
-                            ImageUrl = "",
                             ListPrice = 99.0,
                             Price = 98.0,
                             Price100 = 80.0,

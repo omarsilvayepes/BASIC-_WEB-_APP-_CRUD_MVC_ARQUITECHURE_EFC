@@ -8,11 +8,11 @@ using WebAppMVCArquitecture.Data;
 
 #nullable disable
 
-namespace WebAppMVCArquitecture.Migrations
+namespace WebApp.DataAcces.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231214220407_addProductToDb")]
-    partial class addProductToDb
+    [Migration("20231215210530_AddImageUrlFieldToProductTable")]
+    partial class AddImageUrlFieldToProductTable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,11 +36,18 @@ namespace WebAppMVCArquitecture.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ISBN")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -62,6 +69,8 @@ namespace WebAppMVCArquitecture.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CategoryId");
+
                     b.ToTable("Products");
 
                     b.HasData(
@@ -69,8 +78,10 @@ namespace WebAppMVCArquitecture.Migrations
                         {
                             Id = 1,
                             Author = "Billy Spark",
+                            CategoryId = 1,
                             Description = "Description",
                             ISBN = "SW13465789",
+                            ImageUrl = "",
                             ListPrice = 99.0,
                             Price = 98.0,
                             Price100 = 80.0,
@@ -81,20 +92,10 @@ namespace WebAppMVCArquitecture.Migrations
                         {
                             Id = 2,
                             Author = "Billy Spark",
+                            CategoryId = 2,
                             Description = "Description",
                             ISBN = "SW13465789",
-                            ListPrice = 99.0,
-                            Price = 98.0,
-                            Price100 = 80.0,
-                            Price50 = 85.0,
-                            Title = "Fortune of time"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Author = "Billy Spark",
-                            Description = "Description",
-                            ISBN = "SW13465789",
+                            ImageUrl = "",
                             ListPrice = 99.0,
                             Price = 98.0,
                             Price100 = 80.0,
@@ -140,8 +141,19 @@ namespace WebAppMVCArquitecture.Migrations
                         {
                             Id = 3,
                             DisplayOrder = 3,
-                            Name = "Transport"
+                            Name = "Transports"
                         });
+                });
+
+            modelBuilder.Entity("WebApp.Models.Models.Product", b =>
+                {
+                    b.HasOne("WebAppMVCArquitecture.Models.Category", "Category")
+                        .WithMany()
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
                 });
 #pragma warning restore 612, 618
         }

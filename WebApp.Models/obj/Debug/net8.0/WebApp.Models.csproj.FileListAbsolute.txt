@@ -1,6 +1,7 @@
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebApp.Models\bin\Debug\net8.0\WebApp.Models.deps.json
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebApp.Models\bin\Debug\net8.0\WebApp.Models.dll
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebApp.Models\bin\Debug\net8.0\WebApp.Models.pdb
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebApp.Models\obj\Debug\net8.0\WebApp.Models.csproj.AssemblyReference.cache
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebApp.Models\obj\Debug\net8.0\WebApp.Models.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebApp.Models\obj\Debug\net8.0\WebApp.Models.AssemblyInfoInputs.cache
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebApp.Models\obj\Debug\net8.0\WebApp.Models.AssemblyInfo.cs

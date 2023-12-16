@@ -1,12 +1,3 @@
-C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\obj\Debug\net8.0\WebAppMVCArquitecture.csproj.AssemblyReference.cache
-C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\obj\Debug\net8.0\WebAppMVCArquitecture.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\obj\Debug\net8.0\WebAppMVCArquitecture.AssemblyInfoInputs.cache
-C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\obj\Debug\net8.0\WebAppMVCArquitecture.AssemblyInfo.cs
-C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\obj\Debug\net8.0\WebAppMVCArquitecture.csproj.CoreCompileInputs.cache
-C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\obj\Debug\net8.0\WebAppMVCArquitecture.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\obj\Debug\net8.0\WebAppMVCArquitecture.RazorAssemblyInfo.cache
-C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\obj\Debug\net8.0\WebAppMVCArquitecture.RazorAssemblyInfo.cs
-C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\obj\Debug\net8.0\WebAppMVCArquitecture.sourcelink.json
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\bin\Debug\net8.0\appsettings.json
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\bin\Debug\net8.0\WebAppMVCArquitecture.staticwebassets.runtime.json
@@ -20,6 +11,7 @@ C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCAr
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\bin\Debug\net8.0\Humanizer.dll
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\bin\Debug\net8.0\Microsoft.AspNetCore.Components.QuickGrid.dll
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\bin\Debug\net8.0\Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter.dll
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\bin\Debug\net8.0\Microsoft.Build.dll
@@ -63,6 +55,7 @@ C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCAr
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\bin\Debug\net8.0\Mono.TextTemplating.dll
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\bin\Debug\net8.0\NuGet.Common.dll
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\bin\Debug\net8.0\NuGet.Configuration.dll
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\bin\Debug\net8.0\NuGet.DependencyResolver.Core.dll
@@ -241,6 +234,16 @@ C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCAr
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\bin\Debug\net8.0\WebApp.Models.dll
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\bin\Debug\net8.0\WebApp.DataAcces.pdb
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\bin\Debug\net8.0\WebApp.Models.pdb
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\obj\Debug\net8.0\WebAppMVCArquitecture.csproj.AssemblyReference.cache
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\obj\Debug\net8.0\WebAppMVCArquitecture.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\obj\Debug\net8.0\WebAppMVCArquitecture.AssemblyInfoInputs.cache
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\obj\Debug\net8.0\WebAppMVCArquitecture.AssemblyInfo.cs
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\obj\Debug\net8.0\WebAppMVCArquitecture.csproj.CoreCompileInputs.cache
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\obj\Debug\net8.0\WebAppMVCArquitecture.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\obj\Debug\net8.0\WebAppMVCArquitecture.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\obj\Debug\net8.0\WebAppMVCArquitecture.RazorAssemblyInfo.cache
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\obj\Debug\net8.0\WebAppMVCArquitecture.RazorAssemblyInfo.cs
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\obj\Debug\net8.0\WebAppMVCArquitecture.sourcelink.json
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\obj\Debug\net8.0\staticwebassets\msbuild.WebAppMVCArquitecture.Microsoft.AspNetCore.StaticWebAssets.props

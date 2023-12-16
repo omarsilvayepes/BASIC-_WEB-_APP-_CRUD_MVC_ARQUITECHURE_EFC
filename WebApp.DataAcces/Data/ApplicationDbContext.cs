@@ -18,7 +18,7 @@ namespace WebAppMVCArquitecture.Data
             modelBuilder.Entity<Category>().HasData(
                 new Category { Id=1, Name="Service",DisplayOrder=1},
                 new Category { Id = 2, Name = "Tecnology", DisplayOrder = 2 },
-                new Category { Id = 3, Name = "Transport", DisplayOrder = 3 }
+                new Category { Id = 3, Name = "Transports", DisplayOrder = 3 }
                 );
 
             modelBuilder.Entity<Product>().HasData(
@@ -32,7 +32,9 @@ namespace WebAppMVCArquitecture.Data
                     ListPrice=99,
                     Price=98,
                     Price50=85,
-                    Price100=80
+                    Price100=80,
+                    CategoryId=1,
+                    ImageUrl=""
 
                 },
                  new Product
@@ -45,22 +47,11 @@ namespace WebAppMVCArquitecture.Data
                      ListPrice = 99,
                      Price = 98,
                      Price50 = 85,
-                     Price100 = 80
+                     Price100 = 80,
+                     CategoryId=2,
+                     ImageUrl=""
 
-                 },
-                  new Product
-                  {
-                      Id = 3,
-                      Title = "Fortune of time",
-                      Author = "Billy Spark",
-                      Description = "Description",
-                      ISBN = "SW13465789",
-                      ListPrice = 99,
-                      Price = 98,
-                      Price50 = 85,
-                      Price100 = 80
-
-                  }
+                 }
                 );
         }
     }
