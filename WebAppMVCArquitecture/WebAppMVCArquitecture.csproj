@@ -22,4 +22,8 @@
     <ProjectReference Include="..\WebApp.Models\WebApp.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\Images\Product\" />
+  </ItemGroup>
+
 </Project>

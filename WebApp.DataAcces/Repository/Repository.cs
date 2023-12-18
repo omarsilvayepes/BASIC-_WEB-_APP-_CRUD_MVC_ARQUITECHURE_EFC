@@ -24,15 +24,29 @@ namespace WebApp.DataAcces.Repository
         }
 
 
-        async Task<T> IRepository<T>.Get(Expression<Func<T, bool>> filter)
+        async Task<T> IRepository<T>.Get(Expression<Func<T, bool>> filter, string? includeProperties = null)
         {
             IQueryable<T> query = _dbSet.Where(filter);
+            if (!string.IsNullOrEmpty(includeProperties))
+            {
+                foreach (var includePro in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(includePro);
+                }
+            }
             return await query.FirstOrDefaultAsync();
         }
 
-        async Task<IEnumerable<T>> IRepository<T>.GetAll()
+        async Task<IEnumerable<T>> IRepository<T>.GetAll(string? includeProperties=null)
         {
             IQueryable<T> query = _dbSet;
+            if (!string.IsNullOrEmpty(includeProperties))
+            {
+                foreach (var includePro in includeProperties.Split(new char[] {',' },StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(includePro);
+                }
+            }
             return await query.ToListAsync();
         }
 

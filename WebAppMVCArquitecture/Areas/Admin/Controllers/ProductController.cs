@@ -9,13 +9,15 @@ namespace WebAppMVCArquitecture.Areas.Admin.Controllers
     public class ProductController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
-        public ProductController(IUnitOfWork unitOfWork)
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        public ProductController(IUnitOfWork unitOfWork, IWebHostEnvironment webHostEnvironment)
         {
             _unitOfWork = unitOfWork;
+            _webHostEnvironment = webHostEnvironment;
         }
         public IActionResult Index()
         {
-            List<Product> listProducts = _unitOfWork._productRepository.GetAll().Result.ToList();
+            List<Product> listProducts = _unitOfWork._productRepository.GetAll(includeProperties:"Category").Result.ToList();
             return View(listProducts);
         }
 
@@ -52,13 +54,48 @@ namespace WebAppMVCArquitecture.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public IActionResult Upsert(Product product,string? file) // for save changes in DB
+        public  IActionResult Upsert(ProductViewModel productViewModel,IFormFile? file) // for save changes in DB
         {
             if (ModelState.IsValid)
             {
-                _unitOfWork._productRepository.Add(product);
+                // save file
+
+                string wwwRootPath = _webHostEnvironment.WebRootPath;
+
+                if (file != null)
+                {
+                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+                    string productPath = Path.Combine(wwwRootPath, @"Images\Product");
+
+                    //Validate if it is update file
+
+                    if (!string.IsNullOrEmpty(productViewModel.product.ImageUrl))
+                    {
+                        //Delete the old image
+                        var oldImagePath = Path.Combine(wwwRootPath, productViewModel.product.ImageUrl.TrimStart('\\'));
+                        if (System.IO.File.Exists(oldImagePath)) { System.IO.File.Delete(oldImagePath); }
+                    }
+
+                    using (var fileStream = new FileStream(Path.Combine(productPath, fileName), FileMode.Create))
+                    {
+                        file.CopyToAsync(fileStream);
+                    }
+
+                    productViewModel.product.ImageUrl = @"\Images\Product\" + fileName;
+                }
+
+                if (productViewModel.product.Id == 0)
+                {
+                    _unitOfWork._productRepository.Add(productViewModel.product);
+                    TempData["Success"] = "Create Succesfully";
+                }
+                else
+                {
+                    _unitOfWork._productRepository.Update(productViewModel.product);
+                    TempData["Success"] = "Update Succesfully";
+                }
+                
                 _unitOfWork.Save();
-                TempData["Success"] = "Create Succesfully";
                 return RedirectToAction("Index", "Product");
             }
             return View();

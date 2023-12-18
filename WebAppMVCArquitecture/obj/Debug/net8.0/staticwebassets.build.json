@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "injUbr0J1Lj/NjCnOaeJ8qMcOFsSNj/Y87hQ3D05MPg=",
+  "Hash": "9BiX5fA7zhTThbuKgTYRhHIU9q9sRFSLVmH3AxASXyc=",
   "Source": "WebAppMVCArquitecture",
   "BasePath": "_content/WebAppMVCArquitecture",
   "Mode": "Default",
@@ -129,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\WebAppMVCArquitecture\\WebAppMVCArquitecture\\wwwroot\\Images\\Product\\895d94a3-bc97-4854-a9ab-a5b4c56335f4.jpg",
+      "SourceId": "WebAppMVCArquitecture",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\WebAppMVCArquitecture\\WebAppMVCArquitecture\\wwwroot\\",
+      "BasePath": "_content/WebAppMVCArquitecture",
+      "RelativePath": "Images/Product/895d94a3-bc97-4854-a9ab-a5b4c56335f4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Product\\895d94a3-bc97-4854-a9ab-a5b4c56335f4.jpg"
     },
     {
       "Identity": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\WebAppMVCArquitecture\\WebAppMVCArquitecture\\wwwroot\\js\\site.js",

@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\WebAppMVCArquitecture.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\WebAppMVCArquitecture\\WebAppMVCArquitecture\\wwwroot\\Images\\Product\\895d94a3-bc97-4854-a9ab-a5b4c56335f4.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\895d94a3-bc97-4854-a9ab-a5b4c56335f4.jpg"
+    },
+    {
       "Id": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\WebAppMVCArquitecture\\WebAppMVCArquitecture\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
