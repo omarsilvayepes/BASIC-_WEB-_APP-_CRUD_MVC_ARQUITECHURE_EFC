@@ -5,8 +5,12 @@
       "PackagePath": "staticwebassets\\WebAppMVCArquitecture.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\WebAppMVCArquitecture\\WebAppMVCArquitecture\\wwwroot\\Images\\Product\\895d94a3-bc97-4854-a9ab-a5b4c56335f4.jpg",
-      "PackagePath": "staticwebassets\\Images\\Product\\895d94a3-bc97-4854-a9ab-a5b4c56335f4.jpg"
+      "Id": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\WebAppMVCArquitecture\\WebAppMVCArquitecture\\wwwroot\\Images\\Product\\3940cea0-2285-4b33-8a3e-3b50f75e1a3d.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\3940cea0-2285-4b33-8a3e-3b50f75e1a3d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\WebAppMVCArquitecture\\WebAppMVCArquitecture\\wwwroot\\Images\\Product\\e5577271-fec7-4379-b96e-734d3fad7d64.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\e5577271-fec7-4379-b96e-734d3fad7d64.jpg"
     },
     {
       "Id": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\WebAppMVCArquitecture\\WebAppMVCArquitecture\\wwwroot\\css\\site.css",
@@ -15,6 +19,10 @@
     {
       "Id": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\WebAppMVCArquitecture\\WebAppMVCArquitecture\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\WebAppMVCArquitecture\\WebAppMVCArquitecture\\wwwroot\\js\\product.js",
+      "PackagePath": "staticwebassets\\js\\product.js"
     },
     {
       "Id": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\WebAppMVCArquitecture\\WebAppMVCArquitecture\\wwwroot\\js\\site.js",

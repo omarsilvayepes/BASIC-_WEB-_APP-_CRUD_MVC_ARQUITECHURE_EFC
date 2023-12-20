@@ -17,7 +17,7 @@ namespace WebAppMVCArquitecture.Areas.Admin.Controllers
         }
         public IActionResult Index()
         {
-            List<Product> listProducts = _unitOfWork._productRepository.GetAll(includeProperties:"Category").Result.ToList();
+            List<Product> listProducts = _unitOfWork._productRepository.GetAll(includeProperties: "Category").Result.ToList();
             return View(listProducts);
         }
 
@@ -101,23 +101,34 @@ namespace WebAppMVCArquitecture.Areas.Admin.Controllers
             return View();
         }
 
-        public IActionResult Delete(int? id) // for show the view to the user
+
+
+        #region API Calls
+        [HttpGet]
+        public IActionResult GetAll()
         {
-            if (id == null || id == 0) return NotFound();
-
-            Product? productDb = _unitOfWork._productRepository.Get(c => c.Id == id).Result;
-            if (productDb == null) return NotFound();
-
-            return View(productDb);
+            List<Product> listProducts = _unitOfWork._productRepository.GetAll(includeProperties: "Category").Result.ToList();
+            return Json(new {data= listProducts });
         }
 
-        [HttpPost]
-        public IActionResult Delete(Product product) // for save changes in DB
+        public IActionResult Delete(int? id)
         {
-            _unitOfWork._productRepository.Remove(product);
+            var productToBeDeleted = _unitOfWork._productRepository.Get(p=> p.Id==id).Result;
+            if (productToBeDeleted==null)
+            {
+                return Json(new {success=false,message="Error while deleting"});
+            }
+
+            //Delete the old image
+            var oldImagePath = Path.Combine(_webHostEnvironment.WebRootPath, productToBeDeleted.ImageUrl.TrimStart('\\'));
+            if (System.IO.File.Exists(oldImagePath)) { System.IO.File.Delete(oldImagePath); }
+
+            _unitOfWork._productRepository.Remove(productToBeDeleted);
             _unitOfWork.Save();
-            TempData["Success"] = "Deleted Succesfully";
-            return RedirectToAction("Index", "Product");
+
+            return Json(new { success = true, message = "Product Deleted succesfully" });
         }
+        #endregion 
+
     }
 }
