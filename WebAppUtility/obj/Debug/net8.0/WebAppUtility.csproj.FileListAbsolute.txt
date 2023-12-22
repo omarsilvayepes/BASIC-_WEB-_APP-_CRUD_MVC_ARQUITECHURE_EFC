@@ -10,3 +10,4 @@ C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppUtili
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppUtility\obj\Debug\net8.0\refint\WebAppUtility.dll
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppUtility\obj\Debug\net8.0\WebAppUtility.pdb
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppUtility\obj\Debug\net8.0\ref\WebAppUtility.dll
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppUtility\obj\Debug\net8.0\WebAppUtility.csproj.AssemblyReference.cache

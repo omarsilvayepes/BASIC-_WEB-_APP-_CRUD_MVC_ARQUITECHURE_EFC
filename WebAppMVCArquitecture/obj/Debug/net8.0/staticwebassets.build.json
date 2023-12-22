@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "b41OcXNINwSvxS1r2eUvuqv+rLYUF8GZf/h4nGhjwKg=",
+  "Hash": "V/+fcM4UjJswTbKmij8unmbV0Rfz9xo1gOS7gXMF14M=",
   "Source": "WebAppMVCArquitecture",
   "BasePath": "_content/WebAppMVCArquitecture",
   "Mode": "Default",
@@ -1271,12 +1271,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\WebAppMVCArquitecture\\WebAppMVCArquitecture\\wwwroot\\Images\\Product\\3940cea0-2285-4b33-8a3e-3b50f75e1a3d.jpg",
+      "Identity": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\WebAppMVCArquitecture\\WebAppMVCArquitecture\\wwwroot\\Images\\Product\\26373f0b-a847-4c4d-a68a-d3d22cf46aa6.jpg",
       "SourceId": "WebAppMVCArquitecture",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\WebAppMVCArquitecture\\WebAppMVCArquitecture\\wwwroot\\",
       "BasePath": "_content/WebAppMVCArquitecture",
-      "RelativePath": "Images/Product/3940cea0-2285-4b33-8a3e-3b50f75e1a3d.jpg",
+      "RelativePath": "Images/Product/26373f0b-a847-4c4d-a68a-d3d22cf46aa6.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1287,15 +1287,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Product\\3940cea0-2285-4b33-8a3e-3b50f75e1a3d.jpg"
+      "OriginalItemSpec": "wwwroot\\Images\\Product\\26373f0b-a847-4c4d-a68a-d3d22cf46aa6.jpg"
     },
     {
-      "Identity": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\WebAppMVCArquitecture\\WebAppMVCArquitecture\\wwwroot\\Images\\Product\\e5577271-fec7-4379-b96e-734d3fad7d64.jpg",
+      "Identity": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\WebAppMVCArquitecture\\WebAppMVCArquitecture\\wwwroot\\Images\\Product\\9e42c3cd-6566-45a3-a2f3-72726bfbf27e.jpg",
       "SourceId": "WebAppMVCArquitecture",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\WebAppMVCArquitecture\\WebAppMVCArquitecture\\wwwroot\\",
       "BasePath": "_content/WebAppMVCArquitecture",
-      "RelativePath": "Images/Product/e5577271-fec7-4379-b96e-734d3fad7d64.jpg",
+      "RelativePath": "Images/Product/9e42c3cd-6566-45a3-a2f3-72726bfbf27e.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1306,7 +1306,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Product\\e5577271-fec7-4379-b96e-734d3fad7d64.jpg"
+      "OriginalItemSpec": "wwwroot\\Images\\Product\\9e42c3cd-6566-45a3-a2f3-72726bfbf27e.jpg"
     },
     {
       "Identity": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\WebAppMVCArquitecture\\WebAppMVCArquitecture\\wwwroot\\js\\product.js",

@@ -5021,6 +5021,19 @@
         "runtime": {
           "bin/placeholder/WebApp.Models.dll": {}
         }
+      },
+      "WebAppUtility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.UI": "8.0.0"
+        },
+        "compile": {
+          "bin/placeholder/WebAppUtility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebAppUtility.dll": {}
+        }
       }
     }
   },
@@ -14160,6 +14173,11 @@
       "type": "project",
       "path": "../WebApp.Models/WebApp.Models.csproj",
       "msbuildProject": "../WebApp.Models/WebApp.Models.csproj"
+    },
+    "WebAppUtility/1.0.0": {
+      "type": "project",
+      "path": "../WebAppUtility/WebAppUtility.csproj",
+      "msbuildProject": "../WebAppUtility/WebAppUtility.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -14173,7 +14191,8 @@
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.0",
       "WebApp.DataAcces >= 1.0.0",
-      "WebApp.Models >= 1.0.0"
+      "WebApp.Models >= 1.0.0",
+      "WebAppUtility >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -14208,6 +14227,9 @@
             },
             "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\WebAppMVCArquitecture\\WebApp.Models\\WebApp.Models.csproj": {
               "projectPath": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\WebAppMVCArquitecture\\WebApp.Models\\WebApp.Models.csproj"
+            },
+            "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\WebAppMVCArquitecture\\WebAppUtility\\WebAppUtility.csproj": {
+              "projectPath": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\WebAppMVCArquitecture\\WebAppUtility\\WebAppUtility.csproj"
             }
           }
         }

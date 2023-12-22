@@ -32,12 +32,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\Product\3940cea0-2285-4b33-8a3e-3b50f75e1a3d.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\Product\26373f0b-a847-4c4d-a68a-d3d22cf46aa6.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>WebAppMVCArquitecture</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/WebAppMVCArquitecture</BasePath>
-      <RelativePath>Images/Product/3940cea0-2285-4b33-8a3e-3b50f75e1a3d.jpg</RelativePath>
+      <RelativePath>Images/Product/26373f0b-a847-4c4d-a68a-d3d22cf46aa6.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -46,14 +46,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\Product\3940cea0-2285-4b33-8a3e-3b50f75e1a3d.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\Product\26373f0b-a847-4c4d-a68a-d3d22cf46aa6.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\Product\e5577271-fec7-4379-b96e-734d3fad7d64.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\Product\9e42c3cd-6566-45a3-a2f3-72726bfbf27e.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>WebAppMVCArquitecture</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/WebAppMVCArquitecture</BasePath>
-      <RelativePath>Images/Product/e5577271-fec7-4379-b96e-734d3fad7d64.jpg</RelativePath>
+      <RelativePath>Images/Product/9e42c3cd-6566-45a3-a2f3-72726bfbf27e.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -62,7 +62,7 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\Product\e5577271-fec7-4379-b96e-734d3fad7d64.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\Product\9e42c3cd-6566-45a3-a2f3-72726bfbf27e.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\product.js))">
       <SourceType>Package</SourceType>

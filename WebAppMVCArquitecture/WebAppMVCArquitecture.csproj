@@ -23,6 +23,7 @@
   <ItemGroup>
     <ProjectReference Include="..\WebApp.DataAcces\WebApp.DataAcces.csproj" />
     <ProjectReference Include="..\WebApp.Models\WebApp.Models.csproj" />
+    <ProjectReference Include="..\WebAppUtility\WebAppUtility.csproj" />
   </ItemGroup>
 
   <ItemGroup>

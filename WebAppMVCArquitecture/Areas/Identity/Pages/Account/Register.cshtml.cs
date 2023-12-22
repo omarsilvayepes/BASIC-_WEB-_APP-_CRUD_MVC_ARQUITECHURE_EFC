@@ -3,6 +3,7 @@
 #nullable disable
 
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -16,14 +17,18 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
+using WebApp.Models.Models;
+using WebAppUtility;
 
 namespace WebAppMVCArquitecture.Areas.Identity.Pages.Account
 {
     public class RegisterModel : PageModel
     {
         private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
         private readonly UserManager<IdentityUser> _userManager;
         private readonly IUserStore<IdentityUser> _userStore;
         private readonly IUserEmailStore<IdentityUser> _emailStore;
@@ -32,12 +37,14 @@ namespace WebAppMVCArquitecture.Areas.Identity.Pages.Account
 
         public RegisterModel(
             UserManager<IdentityUser> userManager,
+            RoleManager<IdentityRole> roleManager,
             IUserStore<IdentityUser> userStore,
             SignInManager<IdentityUser> signInManager,
             ILogger<RegisterModel> logger,
             IEmailSender emailSender)
         {
             _userManager = userManager;
+            _roleManager = roleManager;
             _userStore = userStore;
             _emailStore = GetEmailStore();
             _signInManager = signInManager;
@@ -97,11 +104,43 @@ namespace WebAppMVCArquitecture.Areas.Identity.Pages.Account
             [Display(Name = "Confirm password")]
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
-        }
+
+            public string? Role { get; set; }
+            public IEnumerable<SelectListItem> RoleList { get; set; }
+        }   
 
 
         public async Task OnGetAsync(string returnUrl = null)
         {
+            //Seed roles for table role
+
+            if (!_roleManager.RoleExistsAsync(WebAppUtility.UserRoles.Role_Customer).GetAwaiter().GetResult())
+            {
+                _roleManager.CreateAsync(new IdentityRole(WebAppUtility.UserRoles.Role_Customer))
+                    .GetAwaiter()
+                    .GetResult();
+                _roleManager.CreateAsync(new IdentityRole(WebAppUtility.UserRoles.Role_Employee))
+                    .GetAwaiter()
+                    .GetResult();
+                _roleManager.CreateAsync(new IdentityRole(WebAppUtility.UserRoles.Role_Admin))
+                    .GetAwaiter()
+                    .GetResult();
+                _roleManager.CreateAsync(new IdentityRole(WebAppUtility.UserRoles.Role_Company))
+                    .GetAwaiter()
+                    .GetResult();
+            }
+
+            Input = new()
+            {
+                RoleList=_roleManager.Roles
+                .Select(r=> r.Name)
+                .Select(r=> new SelectListItem
+                {
+                    Text=r,
+                    Value=r
+                })
+            };
+
             ReturnUrl = returnUrl;
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
         }
@@ -121,6 +160,18 @@ namespace WebAppMVCArquitecture.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");
+
+                    //Add Role To user
+
+                    if (!string.IsNullOrEmpty(Input.Role))
+                    {
+                        await _userManager.AddToRoleAsync(user, Input.Role);
+                    }
+                    else
+                    {
+                        //Role By Default
+                        await _userManager.AddToRoleAsync(user, UserRoles.Role_Customer);
+                    }
 
                     var userId = await _userManager.GetUserIdAsync(user);
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
@@ -154,11 +205,11 @@ namespace WebAppMVCArquitecture.Areas.Identity.Pages.Account
             return Page();
         }
 
-        private IdentityUser CreateUser()
+        private ApplicationUser CreateUser()
         {
             try
             {
-                return Activator.CreateInstance<IdentityUser>();
+                return Activator.CreateInstance<ApplicationUser>();
             }
             catch
             {

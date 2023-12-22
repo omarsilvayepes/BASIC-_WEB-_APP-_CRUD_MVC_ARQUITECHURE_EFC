@@ -17,7 +17,8 @@
           "Microsoft.EntityFrameworkCore.Tools": "8.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.0",
           "WebApp.DataAcces": "1.0.0",
-          "WebApp.Models": "1.0.0"
+          "WebApp.Models": "1.0.0",
+          "WebAppUtility": "1.0.0"
         },
         "runtime": {
           "WebAppMVCArquitecture.dll": {}
@@ -3011,6 +3012,14 @@
         "runtime": {
           "WebApp.Models.dll": {}
         }
+      },
+      "WebAppUtility/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.UI": "8.0.0"
+        },
+        "runtime": {
+          "WebAppUtility.dll": {}
+        }
       }
     }
   },
@@ -5000,6 +5009,11 @@
       "sha512": ""
     },
     "WebApp.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WebAppUtility/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

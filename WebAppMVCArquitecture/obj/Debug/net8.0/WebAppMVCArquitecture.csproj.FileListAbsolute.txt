@@ -259,8 +259,10 @@ C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCAr
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\bin\Debug\net8.0\WebApp.DataAcces.dll
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\bin\Debug\net8.0\WebApp.Models.dll
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\bin\Debug\net8.0\WebAppUtility.dll
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\bin\Debug\net8.0\WebApp.DataAcces.pdb
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\bin\Debug\net8.0\WebApp.Models.pdb
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\bin\Debug\net8.0\WebAppUtility.pdb
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\obj\Debug\net8.0\WebAppMVCArquitecture.csproj.AssemblyReference.cache
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\obj\Debug\net8.0\WebAppMVCArquitecture.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\WebAppMVCArquitecture\WebAppMVCArquitecture\obj\Debug\net8.0\WebAppMVCArquitecture.AssemblyInfoInputs.cache
