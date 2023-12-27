@@ -7,15 +7,15 @@ function loadDataTable() {
     dataTable = $('#myTableProduct').DataTable({
         "ajax": { url: '/admin/product/getall' },
         "columns": [
-            { data: 'title', "width": "20%" },
-            { data: 'description', "width": "20%" },
-            { data: 'isbn', "width": "15%" },
-            { data: 'author', "width": "15%" },
-            { data: 'listPrice', "width": "5%" },
-            { data: 'price', "width": "5%" },
-            { data: 'price50', "width": "5%" },
-            { data: 'price100', "width": "5%" },
-            { data: 'category.name', "width": "10%" },
+            { data: 'title'},
+            { data: 'description'},
+            { data: 'isbn'},
+            { data: 'author'},
+            /*{ data: 'listPrice' },*/
+            //{ data: 'price'},
+            //{ data: 'price50' },
+            //{ data: 'price100' },
+            { data: 'category.name' },
             {
               data: 'id', "render": function (data) {
                     return `<div class="w-75 btn-group" role="group">
@@ -23,7 +23,7 @@ function loadDataTable() {
                         <a onClick=Delete('/admin/product/delete?id=${data}') class="btn btn-danger mx-2"> <i class="bi bi-trash-fill"></i> Delete</a>
                     </div>`
                 
-              },"width":"15%"
+              }
             }
 
         ]

@@ -8,6 +8,21 @@
     box-shadow: 0 -2px;
 }
 
+/*.cardCollapsible {*/
+    /*margin-top: 20px;*/
+    /*width: 150%;*/
+/*    height: 100px;
+    display: table;*/
+/*}*/
+.Mytable {
+    width: 50%;
+}
+
+/*.test {
+    width: 200px;
+    background-color:purple;
+}*/
+
 
 html {
   font-size: 14px;
